@@ -1,3 +1,14 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-white: #f8f8f2;
+  --color-black: #1a1a1a;
+  --color-brown: #cfac8c;
+  --color-foreground: #292929;
+}
+
 div.wrapper {
   width: 100%;
   height: 100vh;
@@ -18,6 +29,8 @@ div.wrapper header {
   justify-content: space-between;
 
   padding: 0.5rem;
+  /* FIXME change background based on background */
+  background-color: var(--color-black);
 }
 div.wrapper header > img {
   width: 7rem;
@@ -27,10 +40,8 @@ div.wrapper header > img {
 div.wrapper section {
   width: 100%;
   height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 
   scroll-snap-align: start;
 }
@@ -58,16 +69,14 @@ div.wrapper section.one div.content {
   height: 750%;
 }
 div.wrapper section.one div.content h1 {
-  color: white;
-  font-family: "Inter", sans-serif;
+  color: var(--color-white);
   text-align: center;
   white-space: break-spaces;
 
   margin-bottom: 1rem;
 }
 div.wrapper section.one div.content p {
-  color: white;
-  font-family: "Inter", sans-serif;
+  color: var(--color-white);
   text-align: center;
 
   font-size: 1rem;
@@ -81,11 +90,9 @@ div.wrapper section.one div.info {
   justify-content: center;
 
   height: 25%;
-  padding-bottom: 2rem;
 }
 div.wrapper section.one div.info p {
-  color: white;
-  font-family: "Inter", sans-serif;
+  color: var(--color-white);
   text-align: center;
 
   font-size: 0.75rem;
@@ -97,9 +104,201 @@ div.wrapper section.one div.info img {
 }
 
 div.wrapper section.two {
-  background-color: lightgreen;
+  background-color: var(--color-foreground);
+}
+div.wrapper section.two div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 2.5rem;
+}
+div.wrapper section.two div.content > span h1 {
+  color: var(--color-white);
+}
+
+div.wrapper section.two div.content div.services {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 2rem;
+}
+div.wrapper section.two div.content div.services > div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 0.5rem;
+}
+div.wrapper section.two div.content div.services > div > h4 {
+  color: var(--color-white);
+}
+div.wrapper section.two div.content div.services > div > img {
+  width: 3rem;
+  filter: invert();
+}
+div.wrapper section.two div.content div.services > div > p {
+  text-align: center;
+  color: var(--color-white);
+  white-space: break-spaces;
+
+  font-size: 80%;
 }
 
 div.wrapper section.three {
-  background-color: dodgerblue;
+  background-color: var(--color-foreground);
+}
+div.wrapper section.three div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 1.5rem;
+}
+div.wrapper section.three div.content > span h1 {
+  color: var(--color-white);
+}
+div.wrapper section.three div.content div.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  padding-top: 2rem;
+}
+
+div.wrapper section.three div.content div.portfolio div.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+div.wrapper section.three div.content div.portfolio div.column img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+div.wrapper section.three div.content button {
+  background-color: var(--color-brown);
+  padding: 1rem;
+
+  margin-top: 2rem;
+
+  display: flex;
+  border: none;
+  border-radius: 4px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+div.wrapper section.three div.content button p {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+div.wrapper section.four {
+  background-color: white;
+}
+div.wrapper section.four div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 1.5rem;
+}
+div.wrapper section.four div.content > span h1 {
+  color: var(--color-foreground);
+}
+
+div.wrapper section.four div.content div.products {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+div.wrapper section.four div.content div.products div.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: calc(50% - 0.5rem);
+  height: fit-content;
+
+  padding: 1rem;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+div.wrapper section.four div.content div.products div.product img {
+  width: 100%;
+}
+div.wrapper section.four div.content div.products div.product h4 {
+  color: var(--color-foreground);
+}
+div.wrapper section.four div.content div.products div.product p {
+  color: var(--color-foreground);
+  font-size: 80%;
+  margin-top: 0.4rem;
+}
+
+div.wrapper section.four div.content button {
+  background-color: var(--color-brown);
+  padding: 1rem;
+
+  margin-top: 2rem;
+
+  display: flex;
+  border: none;
+  border-radius: 4px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+div.wrapper section.four div.content button p {
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+/* GLOBAL */
+
+div.wrapper > section > div > span.section-title {
+  position: relative;
+  margin-top: 2.5rem;
+}
+div.wrapper > section > div > span.section-title h1 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+div.wrapper section div span.section-title > span {
+  width: 6px;
+  height: 6px;
+
+  background-color: var(--color-brown);
+  border-radius: 100%;
+  position: absolute;
+}
+div.wrapper section div span.section-title > span:first-child {
+  left: -1rem;
+  top: 40%;
+}
+div.wrapper section div span.section-title > span:last-child {
+  right: -1rem;
+  top: 40%;
 }
