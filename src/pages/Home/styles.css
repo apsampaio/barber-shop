@@ -1,0 +1,105 @@
+div.wrapper {
+  width: 100%;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+div.wrapper header {
+  width: 100%;
+  height: 3rem;
+
+  position: fixed;
+  z-index: 15;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.5rem;
+}
+div.wrapper header > img {
+  width: 7rem;
+  filter: invert(1);
+}
+
+div.wrapper section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  scroll-snap-align: start;
+}
+div.wrapper section.one {
+  background-size: cover;
+  background-position: center;
+  background-image: url("background.png");
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+div.wrapper section.one div.content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 2.5rem;
+
+  height: 750%;
+}
+div.wrapper section.one div.content h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  white-space: break-spaces;
+
+  margin-bottom: 1rem;
+}
+div.wrapper section.one div.content p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+
+  font-size: 1rem;
+}
+
+div.wrapper section.one div.info {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 25%;
+  padding-bottom: 2rem;
+}
+div.wrapper section.one div.info p {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+
+  font-size: 0.75rem;
+}
+div.wrapper section.one div.info img {
+  width: 2rem;
+  margin-bottom: 0.25rem;
+  filter: invert();
+}
+
+div.wrapper section.two {
+  background-color: lightgreen;
+}
+
+div.wrapper section.three {
+  background-color: dodgerblue;
+}
