@@ -9,14 +9,13 @@ const Home: React.FC = () => {
         <div className="content">
           <h1>BOY BARBERSHOP</h1>
           <p>Mantenha o visual sempre em dia</p>
-          {/* <p>Lorem ipsum dolor sit amet consectetur adipisi elit.</p> */}
         </div>
         <div className="info">
           <img src="/chevrons-up.svg" alt="arraste-para-cima" />
           <p>Arraste para conhecer</p>
         </div>
       </section>
-      <section className="two">
+      {/* <section className="two">
         <span className="section-title">
           <span></span>
           <h1>NOSSOS SERVIÇOS</h1>
@@ -49,7 +48,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="three">
         <span className="section-title">
           <span></span>
@@ -110,10 +109,30 @@ const Home: React.FC = () => {
       <section className="five">
         <span className="section-title">
           <span></span>
-          <h1>PRODUTOS</h1>
+          <h1>CONTATO</h1>
           <span></span>
         </span>
-        <div className="content"></div>
+        <div className="content">
+          <div>
+            <p className="title">Whatsapp</p>
+            <p className="info">+55 15 9999-9999</p>
+          </div>
+          <div>
+            <p className="title">Instagram</p>
+            <p className="info">@barbershop</p>
+          </div>
+          <div>
+            <p className="title">Localização</p>
+            <p className="info">Sorocaba - SP</p>
+            <p className="sub">Av. Thomaz Cortez, Jardim Juliana, 120</p>
+          </div>
+          <div className="map">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Avenida Thomaz Cortez, 120&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+          </div>
+        </div>
       </section>
     </div>
   );
