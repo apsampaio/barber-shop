@@ -68,17 +68,30 @@ div.wrapper section.one div.content {
   height: 750%;
 }
 div.wrapper section.one div.content h1 {
-  color: var(--color-white);
+  color: #f2dac2;
+  text-align: center;
+  font-family: "Karantina", cursive;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+div.wrapper section.one div.content h2 {
+  color: #f2dac2;
   text-align: center;
   white-space: break-spaces;
 
   margin-bottom: 1rem;
 }
 div.wrapper section.one div.content p {
-  color: var(--color-white);
+  color: #977656;
   text-align: center;
-
-  font-size: 1rem;
+  font-family: "Karantina", cursive;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  /* font-size: 1rem; */
 }
 
 div.wrapper section.one div.info {

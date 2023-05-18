@@ -7,8 +7,9 @@ const Home: React.FC = () => {
     <div className="wrapper">
       <section className="one">
         <div className="content">
-          <h1>Mantenha o visual sempre em dia</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisi elit.</p>
+          <h1>BOY BARBERSHOP</h1>
+          <p>Mantenha o visual sempre em dia</p>
+          {/* <p>Lorem ipsum dolor sit amet consectetur adipisi elit.</p> */}
         </div>
         <div className="info">
           <img src="/chevrons-up.svg" alt="arraste-para-cima" />
