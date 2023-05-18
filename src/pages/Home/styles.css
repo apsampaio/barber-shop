@@ -40,7 +40,6 @@ div.wrapper header > img {
 div.wrapper section {
   width: 100%;
   height: 100vh;
-  padding-top: 3rem;
   padding-bottom: 6rem;
 
   scroll-snap-align: start;
@@ -114,7 +113,7 @@ div.wrapper section.two div.content {
   height: 100%;
   padding: 0 2.5rem;
 }
-div.wrapper section.two div.content > span h1 {
+div.wrapper section.two > span h1 {
   color: var(--color-white);
 }
 
@@ -159,7 +158,7 @@ div.wrapper section.three div.content {
   height: 100%;
   padding: 0 1.5rem;
 }
-div.wrapper section.three div.content > span h1 {
+div.wrapper section.three > span h1 {
   color: var(--color-white);
 }
 div.wrapper section.three div.content div.portfolio {
@@ -167,7 +166,7 @@ div.wrapper section.three div.content div.portfolio {
   flex-wrap: wrap;
 
   gap: 0.5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 div.wrapper section.three div.content div.portfolio div.column {
@@ -216,7 +215,7 @@ div.wrapper section.four div.content {
   height: 100%;
   padding: 0 1.5rem;
 }
-div.wrapper section.four div.content > span h1 {
+div.wrapper section.four > span h1 {
   color: var(--color-foreground);
 }
 
@@ -279,26 +278,31 @@ div.wrapper section.four div.content button p {
 
 /* GLOBAL */
 
-div.wrapper > section > div > span.section-title {
+div.wrapper section span.section-title {
   position: relative;
-  margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  padding-top: 1.5rem;
 }
-div.wrapper > section > div > span.section-title h1 {
+div.wrapper section span.section-title h1 {
   font-family: "Roboto Condensed", sans-serif;
 }
-div.wrapper section div span.section-title > span {
+div.wrapper section span.section-title > span {
   width: 6px;
   height: 6px;
 
   background-color: var(--color-brown);
   border-radius: 100%;
-  position: absolute;
+  position: relative;
 }
-div.wrapper section div span.section-title > span:first-child {
-  left: -1rem;
-  top: 40%;
+div.wrapper section span.section-title > span:first-child {
+  left: -0.75rem;
+  top: 0.75rem;
 }
-div.wrapper section div span.section-title > span:last-child {
-  right: -1rem;
-  top: 40%;
+div.wrapper section span.section-title > span:last-child {
+  left: 0.75rem;
+  top: 0.75rem;
 }

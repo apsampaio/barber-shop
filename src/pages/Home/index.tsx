@@ -5,9 +5,6 @@ import PomadaImage from "../../assets/chief-blue-web.jpg";
 const Home: React.FC = () => {
   return (
     <div className="wrapper">
-      <header>
-        <img src="/logo.svg" alt="Logo" />
-      </header>
       <section className="one">
         <div className="content">
           <h1>Mantenha o visual sempre em dia</h1>
@@ -19,12 +16,12 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="two">
+        <span className="section-title">
+          <span></span>
+          <h1>NOSSOS SERVIÇOS</h1>
+          <span></span>
+        </span>
         <div className="content">
-          <span className="section-title">
-            <span></span>
-            <h1>NOSSOS SERVIÇOS</h1>
-            <span></span>
-          </span>
           <div className="services">
             <div>
               <img src="/cut.svg" alt="corte" />
@@ -53,12 +50,12 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="three">
+        <span className="section-title">
+          <span></span>
+          <h1>PORTFOLIO</h1>
+          <span></span>
+        </span>
         <div className="content">
-          <span className="section-title">
-            <span></span>
-            <h1>PORTFOLIO</h1>
-            <span></span>
-          </span>
           <div className="portfolio">
             <div className="column">
               <img src="/portfolio/pic1.jfif" alt="pic1" />
@@ -76,12 +73,12 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="four">
+        <span className="section-title">
+          <span></span>
+          <h1>PRODUTOS</h1>
+          <span></span>
+        </span>
         <div className="content">
-          <span className="section-title">
-            <span></span>
-            <h1>PRODUTOS</h1>
-            <span></span>
-          </span>
           <div className="products">
             <div className="product">
               <img src={PomadaImage} alt="pomada" />
@@ -110,13 +107,12 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="five">
-        <div className="content">
-          <span className="section-title">
-            <span></span>
-            <h1>PRODUTOS</h1>
-            <span></span>
-          </span>
-        </div>
+        <span className="section-title">
+          <span></span>
+          <h1>PRODUTOS</h1>
+          <span></span>
+        </span>
+        <div className="content"></div>
       </section>
     </div>
   );
