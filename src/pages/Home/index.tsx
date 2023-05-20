@@ -1,54 +1,80 @@
 import "./styles.css";
 
 import PomadaImage from "../../assets/chief-blue-web.jpg";
+import { motion } from "framer-motion";
+import { Reveal } from "../../components/Reveal";
 
 const Home: React.FC = () => {
   return (
     <div className="wrapper">
       <section className="one">
         <div className="content">
-          <h1>BOY BARBERSHOP</h1>
-          <p>Mantenha o visual sempre em dia</p>
-        </div>
-        <div className="info">
-          <img src="/chevrons-up.svg" alt="arraste-para-cima" />
-          <p>Arraste para conhecer</p>
+          <motion.h1
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              type: "spring",
+              stiffness: 100,
+            }}
+          >
+            BOY BARBERSHOP
+          </motion.h1>
+          <motion.p
+            initial={{
+              y: 15,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1,
+            }}
+            transition={{
+              delay: 1.25,
+              ease: "easeInOut",
+              type: "keyframes",
+            }}
+          >
+            Mantenha o visual sempre em dia
+          </motion.p>
         </div>
       </section>
-      {/* <section className="two">
-        <span className="section-title">
-          <span></span>
-          <h1>NOSSOS SERVIÇOS</h1>
-          <span></span>
-        </span>
+      <section className="two">
+        <Reveal width="100%">
+          <span className="section-title">
+            <span></span>
+            <h1>NOSSOS SERVIÇOS</h1>
+            <span></span>
+          </span>
+        </Reveal>
         <div className="content">
           <div className="services">
-            <div>
+            <Reveal>
               <img src="/cut.svg" alt="corte" />
               <h4>Corte social</h4>
               <p>Lorem ipsum dolor sit amet consectetur adi</p>
-            </div>
-            <div>
+            </Reveal>
+            <Reveal>
               <img src="/beard.svg" alt="barba" />
               <h4>Barba</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Facilis sit aperiam voluptates vel cupiditate porro repudiandae
               </p>
-            </div>
-            <div>
+            </Reveal>
+            <Reveal>
               <img src="/painting.svg" alt="tintura" />
               <h4>Tintura de cabelo</h4>
               <p>Lorem ipsum dolor sit amet Facilis sit aperiam voluptate</p>
-            </div>
-            <div>
+            </Reveal>
+            <Reveal>
               <img src="" alt="" />
               <h2></h2>
               <p></p>
-            </div>
+            </Reveal>
           </div>
         </div>
-      </section> */}
+      </section>
       <section className="three">
         <span className="section-title">
           <span></span>
