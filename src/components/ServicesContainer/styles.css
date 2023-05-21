@@ -1,0 +1,14 @@
+div.services-container {
+  flex: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 3rem;
+  padding: 0 3rem;
+}

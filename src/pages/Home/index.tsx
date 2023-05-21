@@ -2,7 +2,12 @@ import "./styles.css";
 
 import PomadaImage from "../../assets/chief-blue-web.jpg";
 import { motion } from "framer-motion";
-import { Reveal } from "../../components/Reveal";
+
+import { RevealAnimation } from "../../components/RevealAnimation";
+import { Title } from "../../components/Title";
+import { ServicesContainer } from "../../components/ServicesContainer";
+
+// Corte Degrade, Alisamento, Barba, Sobrancelha, Corte Social
 
 const Home: React.FC = () => {
   return (
@@ -40,40 +45,10 @@ const Home: React.FC = () => {
         </div>
       </section>
       <section className="two">
-        <Reveal width="100%">
-          <span className="section-title">
-            <span></span>
-            <h1>NOSSOS SERVIÇOS</h1>
-            <span></span>
-          </span>
-        </Reveal>
-        <div className="content">
-          <div className="services">
-            <Reveal>
-              <img src="/cut.svg" alt="corte" />
-              <h4>Corte social</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adi</p>
-            </Reveal>
-            <Reveal>
-              <img src="/beard.svg" alt="barba" />
-              <h4>Barba</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis sit aperiam voluptates vel cupiditate porro repudiandae
-              </p>
-            </Reveal>
-            <Reveal>
-              <img src="/painting.svg" alt="tintura" />
-              <h4>Tintura de cabelo</h4>
-              <p>Lorem ipsum dolor sit amet Facilis sit aperiam voluptate</p>
-            </Reveal>
-            <Reveal>
-              <img src="" alt="" />
-              <h2></h2>
-              <p></p>
-            </Reveal>
-          </div>
-        </div>
+        <RevealAnimation width="100%">
+          <Title text="nossos serviços" />
+        </RevealAnimation>
+        <ServicesContainer />
       </section>
       <section className="three">
         <span className="section-title">

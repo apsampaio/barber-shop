@@ -1,0 +1,29 @@
+span.section-title {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  padding-top: 2rem;
+}
+span.section-title h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+span.section-title > span {
+  width: 6px;
+  height: 6px;
+
+  background-color: var(--color-brown);
+  border-radius: 100%;
+  position: relative;
+}
+span.section-title > span:first-child {
+  left: -0.75rem;
+  top: 0.75rem;
+}
+span.section-title > span:last-child {
+  left: 0.75rem;
+  top: 0.75rem;
+}

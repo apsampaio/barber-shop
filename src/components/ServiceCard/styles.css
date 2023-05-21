@@ -1,0 +1,26 @@
+div.service-card {
+  border: 2px solid var(--color-white);
+  border-radius: 0.4rem;
+
+  height: 6rem;
+  width: 7.5rem;
+
+  padding: 0.75rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+div.service-card > img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+div.service-card > p {
+  font-size: 1rem;
+
+  color: var(--color-white);
+  white-space: break-spaces;
+}

@@ -6,7 +6,7 @@ type Props = {
   width?: "fit-content" | "100%";
 };
 
-const Reveal: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
+const RevealAnimation: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
   children,
   width = "fit-content",
   ...rest
@@ -15,19 +15,14 @@ const Reveal: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
   const isInView = useInView(ref, { once: true });
 
   const mainControls = useAnimation();
-  const slideControls = useAnimation();
 
   useEffect(() => {
-    console.log(isInView);
-
     if (isInView) {
       mainControls.start("visible");
-      slideControls.start("visible");
     } else {
       mainControls.start("hidden");
-      slideControls.start("hidden");
     }
-  }, [isInView, mainControls, slideControls]);
+  }, [isInView, mainControls]);
 
   return (
     <div
@@ -45,6 +40,8 @@ const Reveal: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
         transition={{
           duration: 0.5,
           delay: 0.25,
+          ease: "easeIn",
+          type: "spring",
         }}
       >
         {children}
@@ -53,4 +50,4 @@ const Reveal: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
   );
 };
 
-export { Reveal };
+export { RevealAnimation };
