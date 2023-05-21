@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { RevealAnimation } from "../../components/RevealAnimation";
 import { Title } from "../../components/Title";
+import { Button } from "../../components/Button";
 import { ServicesContainer } from "../../components/ServicesContainer";
 
 // Corte Degrade, Alisamento, Barba, Sobrancelha, Corte Social
@@ -42,6 +43,9 @@ const Home: React.FC = () => {
           >
             Mantenha o visual sempre em dia
           </motion.p>
+          <RevealAnimation width="100%">
+            <Button text="agendar" />
+          </RevealAnimation>
         </div>
       </section>
       <section className="two">

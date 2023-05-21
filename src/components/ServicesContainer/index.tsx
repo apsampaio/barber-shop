@@ -10,16 +10,16 @@ const ServicesContainer: React.FC = () => {
         <ServiceCard icon="/scissors.svg" title="Corte Social" />
       </RevealAnimation>
       <RevealAnimation width="fit-content">
-        <ServiceCard icon="/scissors.svg" title="Corte Degradê" />
+        <ServiceCard icon="/clipper.svg" title="Corte Degradê" />
       </RevealAnimation>
       <RevealAnimation width="fit-content">
-        <ServiceCard icon="/scissors.svg" title="Barba" />
+        <ServiceCard icon="/beard.svg" title="Barba e Bigode" />
       </RevealAnimation>
       <RevealAnimation width="fit-content">
-        <ServiceCard icon="/scissors.svg" title="Alisamento" />
+        <ServiceCard icon="/hair.svg" title="Alisamento" />
       </RevealAnimation>
       <RevealAnimation width="fit-content">
-        <ServiceCard icon="/scissors.svg" title="Sobrancelha" />
+        <ServiceCard icon="/face.svg" title="Sobrancelha" />
       </RevealAnimation>
     </div>
   );
