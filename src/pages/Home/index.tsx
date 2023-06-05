@@ -1,59 +1,16 @@
 import "./styles.css";
 
 import PomadaImage from "../../assets/chief-blue-web.jpg";
-import { motion } from "framer-motion";
 
-import { RevealAnimation } from "../../components/RevealAnimation";
-import { Title } from "../../components/Title";
-import { Button } from "../../components/Button";
-import { ServicesContainer } from "../../components/ServicesContainer";
-
+import { SectionHome } from "./SectionHome";
+import { SectionServices } from "./SectionServices";
 // Corte Degrade, Alisamento, Barba, Sobrancelha, Corte Social
 
 const Home: React.FC = () => {
   return (
     <div className="wrapper">
-      <section className="one">
-        <div className="content">
-          <motion.h1
-            initial={{ x: -50, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.5,
-              type: "spring",
-              stiffness: 100,
-            }}
-          >
-            BOY BARBERSHOP
-          </motion.h1>
-          <motion.p
-            initial={{
-              y: 15,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              delay: 1.25,
-              ease: "easeInOut",
-              type: "keyframes",
-            }}
-          >
-            Mantenha o visual sempre em dia
-          </motion.p>
-          <RevealAnimation width="100%">
-            <Button text="agendar" />
-          </RevealAnimation>
-        </div>
-      </section>
-      <section className="two">
-        <RevealAnimation width="100%">
-          <Title text="nossos serviços" />
-        </RevealAnimation>
-        <ServicesContainer />
-      </section>
+      <SectionHome />
+      <SectionServices />
       <section className="three">
         <span className="section-title">
           <span></span>

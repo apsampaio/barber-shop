@@ -1,20 +1,5 @@
-* {
-  font-family: "Inter", sans-serif;
-}
-
-:root {
-  --color-white: #f8f8f2;
-  --color-black: #1a1a1a;
-  --color-brown: #cfac8c;
-  --color-brown-button: #977656;
-  --color-brown-active: #f2dac2;
-  --color-foreground: #292929;
-  --color-orange: #ff9000;
-}
-
 div.wrapper {
   width: 100%;
-
   overflow-y: scroll;
 }
 
@@ -23,51 +8,6 @@ div.wrapper section {
   padding-bottom: 6rem;
 
   /* scroll-snap-align: start; */
-}
-div.wrapper section.one {
-  background-size: cover;
-  background-position: center;
-  background-image: url("background.png");
-
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  height: 100vh;
-}
-
-div.wrapper section.one div.content {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 0 2.5rem;
-
-  height: 750%;
-}
-div.wrapper section.one div.content > h1 {
-  color: #f2dac2;
-  text-align: center;
-  font-family: "Karantina", cursive;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-
-  margin-bottom: 1rem;
-  font-size: 4rem;
-}
-
-div.wrapper section.one div.content > p {
-  color: var(--color-brown);
-  text-align: center;
-  font-family: "Karantina", cursive;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-}
-
-div.wrapper section.two {
-  background-color: var(--color-foreground);
 }
 
 div.wrapper section.three {

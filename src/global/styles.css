@@ -7,12 +7,25 @@
 @media (min-width:1281px) { hi-res laptops and desktops   }
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --color-white: #f8f8f2;
+  --color-black: #1a1a1a;
+  --color-brown: #cfac8c;
+  --color-brown-button: #977656;
+  --color-brown-active: #f2dac2;
+  --color-foreground: #292929;
+  --color-orange: #ff9000;
 }
 
-html, body, #root {
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
 }

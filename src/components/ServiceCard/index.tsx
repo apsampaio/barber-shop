@@ -1,4 +1,5 @@
-import "./styles.css";
+import { RevealFromLeft } from "../RevealFromLeft";
+import { Container } from "./styles";
 
 type Props = {
   title: string;
@@ -7,10 +8,13 @@ type Props = {
 
 const ServiceCard: React.FC<Props> = ({ icon, title }) => {
   return (
-    <div className="service-card">
-      <img src={icon} alt="corte" />
-      <p>{title}</p>
-    </div>
+    <RevealFromLeft width="100%">
+      <Container>
+        <img src={icon} alt="corte" />
+        <p>{title}</p>
+        <strong>R$ 30,00</strong>
+      </Container>
+    </RevealFromLeft>
   );
 };
 
