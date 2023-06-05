@@ -20,13 +20,13 @@ const Home: React.FC = () => {
         <div className="content">
           <div className="portfolio">
             <div className="column">
-              <img src="/portfolio/pic1.jfif" alt="pic1" />
-              <img src="/portfolio/pic2.jfif" alt="pic2" />
-              <img src="/portfolio/pic5.jfif" alt="pic5" />
+              <img src="/barber-shop/portfolio/pic1.jfif" alt="pic1" />
+              <img src="/barber-shop/portfolio/pic2.jfif" alt="pic2" />
+              <img src="/barber-shop/portfolio/pic5.jfif" alt="pic5" />
             </div>
             <div className="column">
-              <img src="/portfolio/pic3.jfif" alt="pic3" />
-              <img src="/portfolio/pic4.jfif" alt="pic4" />
+              <img src="/barber-shop/portfolio/pic3.jfif" alt="pic3" />
+              <img src="/barber-shop/portfolio/pic4.jfif" alt="pic4" />
             </div>
           </div>
           <button>

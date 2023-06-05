@@ -8,11 +8,11 @@ const SectionServices: React.FC = () => {
     <Container>
       <Title text="NOSSOS SERVIÇOS" />
       <div className="content">
-        <ServiceCard icon="/scissors.svg" title="Corte Social" />
-        <ServiceCard icon="/clipper.svg" title="Corte Degradê" />
-        <ServiceCard icon="/beard.svg" title="Barba e Bigode" />
-        <ServiceCard icon="/hair.svg" title="Alisamento" />
-        <ServiceCard icon="/face.svg" title="Sobrancelha" />
+        <ServiceCard icon="scissors.svg" title="Corte Social" />
+        <ServiceCard icon="clipper.svg" title="Corte Degradê" />
+        <ServiceCard icon="beard.svg" title="Barba e Bigode" />
+        <ServiceCard icon="hair.svg" title="Alisamento" />
+        <ServiceCard icon="face.svg" title="Sobrancelha" />
       </div>
     </Container>
   );
