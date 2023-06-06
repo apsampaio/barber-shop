@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { RevealAnimation } from "../../../components/RevealAnimation";
 
 export const Container = styled.section`
   background-color: var(--color-foreground);
