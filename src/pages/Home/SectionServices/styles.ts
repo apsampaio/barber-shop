@@ -14,7 +14,6 @@ export const Container = styled.section`
     flex-direction: column;
 
     align-items: center;
-    padding-top: 4rem;
     gap: 1.25rem;
 
     width: 100%;

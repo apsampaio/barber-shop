@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
 
 import "./styles.css";
 
@@ -6,7 +6,7 @@ type Props = {
   text: string;
 };
 
-const Button: React.FC<Props & HTMLAttributes<HTMLButtonElement>> = (
+const Button: React.FC<Props & ButtonHTMLAttributes<HTMLButtonElement>> = (
   { text },
   ...rest
 ) => {

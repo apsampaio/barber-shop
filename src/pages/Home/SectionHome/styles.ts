@@ -10,6 +10,7 @@ export const Container = styled.section`
   flex-direction: column;
 
   height: 100vh;
+  padding-bottom: 6rem;
 
   & div.content {
     display: flex;

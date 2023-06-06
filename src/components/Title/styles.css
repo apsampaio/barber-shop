@@ -5,7 +5,8 @@ span.section-title {
   justify-content: center;
 
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 span.section-title h1 {
   font-family: "Roboto Condensed", sans-serif;
