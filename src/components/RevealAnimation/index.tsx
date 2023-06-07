@@ -38,8 +38,8 @@ const RevealAnimation: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
         initial="hidden"
         animate={mainControls}
         transition={{
-          duration: 0.5,
-          delay: 0.25,
+          duration: 0.75,
+          delay: 0.5,
           ease: "easeIn",
           type: "spring",
         }}

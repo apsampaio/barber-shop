@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  background-color: var(--color-foreground);
+  background-color: var(--color-black);
 
   position: relative;
   display: flex;
@@ -25,12 +25,20 @@ export const Products = styled.div`
   gap: 1rem;
 `;
 
+export const Column = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+`;
+
 export const Product = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: calc(50% - 1rem);
+  width: 100%;
   height: fit-content;
 
   padding: 1rem;

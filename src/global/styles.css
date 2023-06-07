@@ -15,6 +15,7 @@
   --color-brown-active: #f2dac2;
   --color-foreground: #292929;
   --color-orange: #ff9000;
+  --color-yellow: #fabb05;
 }
 
 * {
@@ -22,6 +23,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
