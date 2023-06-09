@@ -3,12 +3,23 @@ import { Button } from "../../../components/Button";
 import { motion } from "framer-motion";
 
 import { Container, Title, VideoContainer, BackgroundVideo } from "./styles";
+import { useEffect, useRef } from "react";
 
 const SectionHome: React.FC = () => {
+  const ref = useRef<null | HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.play();
+    }
+  }, [ref]);
+
   return (
     <Container>
       <VideoContainer>
         <BackgroundVideo
+          ref={ref}
+          playsInline
           autoPlay
           loop
           muted

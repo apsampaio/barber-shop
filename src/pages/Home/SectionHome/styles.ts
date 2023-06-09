@@ -74,8 +74,9 @@ export const Title = styled.div`
   & > p {
     color: var(--color-brown);
     text-align: center;
+    font-weight: bold;
     font-family: "Karantina", cursive;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
 `;
