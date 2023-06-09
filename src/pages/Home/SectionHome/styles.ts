@@ -13,15 +13,41 @@ export const Container = styled.section`
   padding-bottom: 6rem;
 
   & div.content {
+    z-index: 15;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0rem 2rem 6rem 2rem;
+
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
-
-    padding: 0 2.5rem;
-    height: 100%;
   }
+`;
+
+export const VideoContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+export const BackgroundVideo = styled.video`
+  width: 100vw;
+  height: 100vh;
+
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: linear-gradient(180deg, #1d1d1f 0%, #282a36 100%);
+
+  filter: blur(7px) brightness(45%);
 `;
 
 export const Title = styled.div`
@@ -34,7 +60,8 @@ export const Title = styled.div`
   flex: 1;
 
   & > h1 {
-    color: #f2dac2;
+    /* color: #f2dac2; */
+    color: #f8f8f8;
     text-align: center;
     font-family: "Karantina", cursive;
     font-weight: 700;

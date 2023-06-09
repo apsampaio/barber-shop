@@ -2,11 +2,19 @@ import { RevealAnimation } from "../../../components/RevealAnimation";
 import { Button } from "../../../components/Button";
 import { motion } from "framer-motion";
 
-import { Container, Title } from "./styles";
+import { Container, Title, VideoContainer, BackgroundVideo } from "./styles";
 
 const SectionHome: React.FC = () => {
   return (
     <Container>
+      <VideoContainer>
+        <BackgroundVideo
+          autoPlay
+          loop
+          muted
+          src={"/barber-shop/background.mp4"}
+        />
+      </VideoContainer>
       <div className="content">
         <Title>
           <motion.h1
