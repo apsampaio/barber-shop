@@ -49,7 +49,6 @@ const RevealFromRight: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
         transition={{
           duration: 0.5,
           delay: 0.25,
-          ease: "easeIn",
           type: "spring",
         }}
       >

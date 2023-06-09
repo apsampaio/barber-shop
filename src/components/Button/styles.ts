@@ -1,4 +1,6 @@
-button.custom-button {
+import styled from "styled-components";
+
+export const Container = styled.button`
   background-color: var(--color-brown-button);
 
   padding: 1rem;
@@ -15,12 +17,12 @@ button.custom-button {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
 
-button.custom-button p {
-  color: var(--color-white);
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+  p {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+`;

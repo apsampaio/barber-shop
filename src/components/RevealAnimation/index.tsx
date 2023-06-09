@@ -40,7 +40,6 @@ const RevealAnimation: React.FC<Props & HTMLAttributes<HTMLDivElement>> = ({
         transition={{
           duration: 0.75,
           delay: 0.5,
-          ease: "easeIn",
           type: "spring",
         }}
       >

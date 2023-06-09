@@ -1,19 +1,16 @@
 import { ButtonHTMLAttributes } from "react";
 
-import "./styles.css";
+import { Container } from "./styles";
 
-type Props = {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-};
+}
 
-const Button: React.FC<Props & ButtonHTMLAttributes<HTMLButtonElement>> = (
-  { text },
-  ...rest
-) => {
+const Button: React.FC<Props> = ({ text }, ...rest) => {
   return (
-    <button className="custom-button" {...rest}>
+    <Container {...rest}>
       <p>{text}</p>
-    </button>
+    </Container>
   );
 };
 

@@ -105,31 +105,3 @@ export const ResumeContainer = styled.div`
     gap: 0.25rem;
   }
 `;
-
-export const UserReview = styled.div`
-  width: 100%;
-  height: 3rem;
-
-  border-radius: 4px;
-  background-color: var(--color-foreground);
-
-  display: flex;
-  align-items: center;
-
-  div {
-    width: 32px;
-    height: 32px;
-
-    background-color: lightgray;
-    border-radius: 100%;
-    margin: 0.5rem;
-  }
-
-  p {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 80%;
-    color: var(--color-white);
-  }
-`;
