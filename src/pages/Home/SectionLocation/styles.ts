@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const Container = styled.section`
   background-color: var(--color-black);
