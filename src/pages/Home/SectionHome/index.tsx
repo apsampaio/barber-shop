@@ -14,6 +14,13 @@ const SectionHome: React.FC = () => {
     }
   }, [ref]);
 
+  const handleOpenAgenda = () => {
+    window.open(
+      "https://chat.inbarberapp.com/?id=5df4b82e-d424-402e-b29d-d8d766d79b2c",
+      "_blank"
+    );
+  };
+
   return (
     <Container>
       <VideoContainer>
@@ -58,7 +65,7 @@ const SectionHome: React.FC = () => {
           </motion.p>
         </Title>
         <RevealAnimation width="100%">
-          <Button text="agendar" />
+          <Button text="agendar" onClick={handleOpenAgenda} />
         </RevealAnimation>
       </div>
     </Container>

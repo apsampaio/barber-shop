@@ -6,9 +6,9 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
 }
 
-const Button: React.FC<Props> = ({ text }, ...rest) => {
+const Button: React.FC<Props> = ({ text, onClick }, ...rest) => {
   return (
-    <Container {...rest}>
+    <Container onClick={onClick} {...rest}>
       <p>{text}</p>
     </Container>
   );

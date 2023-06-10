@@ -8,6 +8,13 @@ import { RevealAnimation } from "../../../components/RevealAnimation";
 import PomadaImage from "../../../assets/chief-blue-web.jpg";
 
 const SectionProducts: React.FC = () => {
+  const handleOpenAgenda = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=5515988209226&text=Ol%C3%A1,%20%20gostaria%20de%20encomendar%20um%20produto%20da%20barbearia!",
+      "_blank"
+    );
+  };
+
   return (
     <Container>
       <Title text="PRODUTOS" />
@@ -46,7 +53,7 @@ const SectionProducts: React.FC = () => {
             </RevealAnimation>
           </Column>
         </Products>
-        <Button text="ENCOMENDAR" />
+        <Button text="ENCOMENDAR" onClick={handleOpenAgenda} />
       </div>
     </Container>
   );

@@ -11,20 +11,27 @@ const SectionLocation: React.FC = () => {
         <RevealAnimation>
           <Section>
             <p>Whatsapp</p>
-            <p>+55 15 9999-9999</p>
+            <p>+55 15 98820-9226</p>
           </Section>
         </RevealAnimation>
         <RevealAnimation>
           <Section>
             <p>Instagram</p>
-            <p>@barbershop</p>
+            <p>@boybarbershop_</p>
           </Section>
         </RevealAnimation>
         <RevealAnimation>
           <Section>
             <p>Localização</p>
-            <p>Sorocaba - SP</p>
-            <p>Av. Thomaz Cortez, Jardim Juliana, 120</p>
+            <p>R. Thomás Cortêz, 91 - Jardim Juliana</p>
+            <p>Sorocaba - SP - 18080-300, Brasil</p>
+          </Section>
+        </RevealAnimation>
+        <RevealAnimation>
+          <Section>
+            <p>Horários e Funcionamento</p>
+            <p>Ter à Sex 10:00h às 21:00h</p>
+            <p>Sab 09:00h às 19:00h</p>
           </Section>
         </RevealAnimation>
         <Map>
