@@ -29,6 +29,39 @@ export const Container = styled.section`
   }
 `;
 
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin-top: 3rem;
+`;
+
+export const Logo = styled.img`
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100%;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  z-index: 15;
+`;
+
+export const LogoBackground = styled.div`
+  width: 220px;
+  height: 220px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  position: absolute;
+  z-index: 10;
+
+  border-radius: 100%;
+`;
+
 export const VideoContainer = styled.div`
   position: absolute;
   top: 0;

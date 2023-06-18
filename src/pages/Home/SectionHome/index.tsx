@@ -1,15 +1,23 @@
 import { RevealAnimation } from "../../../components/RevealAnimation";
 import { Button } from "../../../components/Button";
 import { motion } from "framer-motion";
-
-import { Container, Title, VideoContainer, BackgroundVideo } from "./styles";
 import { useEffect, useRef } from "react";
+
+import {
+  Container,
+  Title,
+  VideoContainer,
+  BackgroundVideo,
+  Logo,
+  LogoBackground,
+  LogoContainer,
+} from "./styles";
 
 const SectionHome: React.FC = () => {
   const ref = useRef<null | HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (ref.current) {
+    if (ref.current && !ref.current.played) {
       ref.current.play();
     }
   }, [ref]);
@@ -34,6 +42,10 @@ const SectionHome: React.FC = () => {
         />
       </VideoContainer>
       <div className="content">
+        <LogoContainer>
+          <Logo src="/barber-shop/logo.jpg" alt="logo" />
+          <LogoBackground></LogoBackground>
+        </LogoContainer>
         <Title>
           <motion.h1
             initial={{ x: -50, opacity: 0 }}
