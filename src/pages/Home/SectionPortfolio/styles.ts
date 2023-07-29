@@ -13,7 +13,6 @@ export const Container = styled.section`
     align-items: center;
 
     height: 100%;
-    padding: 0 1.5rem;
   }
 `;
 
@@ -22,7 +21,6 @@ export const Portfolio = styled.div`
   flex-wrap: wrap;
 
   gap: 0.5rem;
-  padding-top: 1rem;
 `;
 
 export const Column = styled.div`

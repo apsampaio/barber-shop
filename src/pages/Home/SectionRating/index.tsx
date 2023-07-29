@@ -11,16 +11,8 @@ import {
 
 import { useEffect, useRef } from "react";
 
-import { InfiniteWheel } from "../../../components/InfiniteWheel";
+// import { InfiniteWheel } from "../../../components/InfiniteWheel";
 import { Star } from "../../../components/Star";
-
-import {
-  Container,
-  RatingResume,
-  ResumeContainer,
-  ProgressContainer,
-  ProgressDivision,
-} from "./styles";
 
 const Progress: React.FC<{ title: string; percent: number }> = ({
   title,
@@ -40,10 +32,11 @@ const Progress: React.FC<{ title: string; percent: number }> = ({
   }, [isInView, mainControls]);
 
   return (
-    <ProgressDivision ref={ref}>
-      <p>{title}</p>
-      <div>
+    <div className="flex items-center pr-2 pb-1" ref={ref}>
+      <p className="text-white pr-2 w-5 text-center font-inter">{title}</p>
+      <div className="w-full h-2 bg-background rounded relative">
         <motion.div
+          className="absolute rounded bg-yellow-300 h-full"
           variants={{
             hidden: { width: 0 },
             visible: { width: percent + "%" },
@@ -57,7 +50,7 @@ const Progress: React.FC<{ title: string; percent: number }> = ({
           animate={mainControls}
         ></motion.div>
       </div>
-    </ProgressDivision>
+    </div>
   );
 };
 
@@ -79,41 +72,46 @@ const Counter: React.FC<{ from: number; to: number; duration: number }> = ({
     }
   }, [isInView]);
 
-  return <motion.p ref={ref}>{rounded}</motion.p>;
+  return (
+    <motion.p className="text-2xl text-white font-bold font-inter" ref={ref}>
+      {rounded}
+    </motion.p>
+  );
 };
 
 const SectionRating: React.FC = () => {
   return (
-    <Container>
+    <div className="bg-background flex flex-col items-center pb-12">
       <Title text="AVALIAÇÕES" />
-      <div className="content">
-        <RatingResume>
-          <h2>Avaliações de clientes</h2>
-          <div>
-            <ProgressContainer>
+      <div className="flex flex-col gap-2 w-full px-4">
+        <div
+          className="p-4 border bg-foreground border-secondary mb-2 w-full
+        flex flex-col"
+        >
+          <h2 className="text-white font-bold font-inter text-base tracking-wider"></h2>
+          <div className="flex flex-1 mt-3 w-full">
+            <div className="flex-1">
               <Progress title="5" percent={100} />
               <Progress title="4" percent={0} />
               <Progress title="3" percent={0} />
               <Progress title="2" percent={0} />
               <Progress title="1" percent={0} />
-            </ProgressContainer>
-            <ResumeContainer>
+            </div>
+            <div className="flex flex-col w-fit  items-center gap-1">
               <Counter from={0} to={5} duration={1} />
-
-              <div>
+              <div className="flex gap-1">
                 <Star filled />
                 <Star filled />
                 <Star filled />
                 <Star filled />
                 <Star filled />
               </div>
-              <p>(54)</p>
-            </ResumeContainer>
+              <p className="text-white/70 font-inter">(57)</p>
+            </div>
           </div>
-        </RatingResume>
-        <InfiniteWheel />
+        </div>
       </div>
-    </Container>
+    </div>
   );
 };
 
