@@ -69,8 +69,13 @@ const SectionProducts: React.FC = () => {
       <Title text="PRODUTOS" />
       <div className="flex flex-col items-center w-full">
         <div className="flex flex-wrap w-full items-center justify-center sm:gap-4 gap-2">
-          {products.map((p) => (
-            <Product src={p.src} description={p.description} name={p.name} />
+          {products.map((p, idx) => (
+            <Product
+              key={idx}
+              src={p.src}
+              description={p.description}
+              name={p.name}
+            />
           ))}
         </div>
         <RevealAnimation width="fit-content">

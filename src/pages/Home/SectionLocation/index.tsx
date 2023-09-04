@@ -20,7 +20,7 @@ const SectionLocation: React.FC = () => {
   return (
     <div className="flex flex-col">
       <Title text="CONTATO" />
-      <div className="flex flex-col w-full pb-8 px-2 -mt-4">
+      <div className="flex flex-col w-full -mt-4">
         <RevealAnimation width="100%">
           <div className="flex w-full items-center justify-center pb-8">
             <img
@@ -43,18 +43,8 @@ const SectionLocation: React.FC = () => {
             />
           </div>
         </RevealAnimation>
-        <div className="flex w-full flex-col gap-4 pb-8">
-          <div className="flex w-full items-center">
-            <img
-              src={"/barber-shop/icons/phone.svg"}
-              alt="corte-icon"
-              className="w-5 h-5 mx-2 hover:cursor-pointer"
-            />
-            <p className="w-full text-white font-inter text-sm antialiased">
-              +55 15 98820-9226
-            </p>
-          </div>
-          <div className="flex w-full items-center">
+        <div className="flex w-full flex-col gap-4 pl-2 pb-8">
+          {/* <div className="flex w-full items-center border-l-2 border-primary h-8">
             <img
               src={"/barber-shop/icons/mail.svg"}
               alt="corte-icon"
@@ -63,8 +53,8 @@ const SectionLocation: React.FC = () => {
             <p className="w-full text-white font-inter text-sm antialiased">
               boybaybershop@gmail.com
             </p>
-          </div>
-          <div className="flex w-full">
+          </div> */}
+          <div className="flex w-full border-l-2 items-center border-primary h-8">
             <img
               src={"/barber-shop/icons/location.svg"}
               alt="corte-icon"
@@ -75,13 +65,37 @@ const SectionLocation: React.FC = () => {
               18080-300
             </p>
           </div>
+          <div className="flex w-full items-center border-l-2 border-primary h-8">
+            <img
+              src={"/barber-shop/icons/phone.svg"}
+              alt="corte-icon"
+              className="w-5 h-5 mx-2 hover:cursor-pointer"
+            />
+            <p className="w-full text-white font-inter text-sm antialiased">
+              +55 15 98820-9226
+            </p>
+          </div>
+          <div className="flex w-full items-center border-l-2 border-primary h-12">
+            <img
+              src={"/barber-shop/icons/clock.svg"}
+              alt="horario-icon"
+              className="w-5 h-5 mx-2 hover:cursor-pointer"
+            />
+            <div className="flex flex-col justify-evenly h-full">
+              <p className="w-full text-white font-inter text-sm antialiased">
+                Ter. à Sex. 10:00h às 21:00h
+              </p>
+              <p className="w-full text-white font-inter text-sm antialiased">
+                Sab. 09:00h às 19:00h
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div className="flex items-center justify-center p-2 border-primary border">
+        <div className="flex items-center justify-center">
           <iframe
-            className="border-none w-full h-52"
+            className="border-none w-full h-64"
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Avenida Thomaz Cortez, 120&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Av.%20Dr.%20Thomas%20Cort%C3%AAz,%2091%20-%20Jardim%20Juliana,%20Sorocaba%20-%20SP,%2018080-300&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           ></iframe>
         </div>
       </div>
