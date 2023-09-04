@@ -6,8 +6,13 @@ export default {
       title: ["Karantina", "cursive"],
       inter: ["Inter", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      kaushan: ["Kaushan Script", "cursive"],
     },
     extend: {
+      width: {
+        half: "50vw",
+        quarter: "25vw",
+      },
       colors: {
         background: "#151515",
         foreground: "#1f1f1f",
