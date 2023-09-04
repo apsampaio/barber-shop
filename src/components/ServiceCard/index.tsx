@@ -9,7 +9,7 @@ type Props = {
 const ServiceCard: React.FC<Props> = ({ title, price }) => {
   return (
     <RevealFromLeft width="100%">
-      <div className="w-full py-4 flex border border-secondary bg-foreground">
+      <div className="w-full py-4 flex border border-secondary bg-foreground sm:max-w-md sm:min-w-fit">
         {/* <img
           src={"/barber-shop/icons/" + icon}
           alt="corte-icon"

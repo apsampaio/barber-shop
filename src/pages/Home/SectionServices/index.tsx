@@ -25,10 +25,10 @@ const services_combo = [
 
 const SectionServices: React.FC = () => {
   return (
-    <div className="relative flex flex-col bg-background pb-2">
+    <div className="flex flex-col bg-background pb-12">
       <Title text="NOSSOS SERVIÇOS" />
-      <div className="flex flex-col items-center gap-5 w-full px-4">
-        <div className="flex flex-col items-center w-full gap-5">
+      <div className="flex flex-col w-full items-center gap-5 px-4 sm:flex-row sm:items-start">
+        <div className="flex flex-col items-center w-full gap-5 sm:min-w-fit">
           <p className="font-kaushan text-white text-2xl tracking-widest antialiased">
             Cabelo
           </p>
@@ -41,7 +41,7 @@ const SectionServices: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col items-center w-full gap-5">
+        <div className="flex flex-col items-center w-full gap-5 sm:min-w-fit">
           <p className="font-kaushan text-white text-2xl tracking-widest antialiased">
             Estética
           </p>
@@ -54,7 +54,7 @@ const SectionServices: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col items-center w-full gap-5">
+        <div className="flex flex-col items-center w-full gap-5 sm:min-w-fit">
           <p className="font-kaushan text-white text-2xl tracking-widest antialiased">
             Combo
           </p>
