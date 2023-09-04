@@ -11,7 +11,7 @@ import {
 
 import { useEffect, useRef } from "react";
 
-import { InfiniteWheel } from "../../../components/InfiniteWheel";
+// import { InfiniteWheel } from "../../../components/InfiniteWheel";
 import { Star } from "../../../components/Star";
 
 const Progress: React.FC<{ title: string; percent: number }> = ({
@@ -111,7 +111,7 @@ const SectionRating: React.FC = () => {
           </div>
         </div>
       </div>
-      <InfiniteWheel />
+      {/* <InfiniteWheel /> */}
     </div>
   );
 };
