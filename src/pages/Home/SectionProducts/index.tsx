@@ -1,11 +1,60 @@
-import { Container, Products, Column, Product } from "./styles";
-
 import { Title } from "../../../components/Title";
-import { Button } from "../../../components/Button";
-
 import { RevealAnimation } from "../../../components/RevealAnimation";
 
-import PomadaImage from "../../../assets/chief-blue-web.jpg";
+type iProduct = {
+  src: string;
+  name: string;
+  description: string;
+};
+
+const products: iProduct[] = [
+  {
+    src: "/barber-shop/products/product-1.jpeg",
+    name: "GEL FIXADOR",
+    description: "Extra forte sem deixar resíduos",
+  },
+  {
+    src: "/barber-shop/products/product-2.jpeg",
+    name: "POMADA CAPILAR",
+    description: "Efeito seco sem resíduos",
+  },
+  {
+    src: "/barber-shop/products/product-3.jpeg",
+    name: "ÓLEO PARA BARBA",
+    description: "Hidrata e amacia",
+  },
+  {
+    src: "/barber-shop/products/product-4.jpeg",
+    name: "POMADA EM PÓ",
+    description: "Controla e modela",
+  },
+  {
+    src: "/barber-shop/products/product-5.jpeg",
+    name: "GEL FIXADOR (BLACK)",
+    description: "Extra forte sem deixar resíduos",
+  },
+  {
+    src: "/barber-shop/products/product-6.jpeg",
+    name: "POMADA CAPILAR",
+    description: "Efeito seco sem resíduos",
+  },
+];
+
+const Product: React.FC<iProduct> = (product: iProduct) => {
+  return (
+    <RevealAnimation>
+      <div className="flex flex-col items-center max-w-sm p-2 sm:p-4 rounded-sm border-primary border">
+        <img src={product.src} alt="pomada" className="w-40 sm:w-56" />
+        <h4 className="text-white font-inter font-bold pt-4 truncate w-40 sm:w-56 text-center">
+          {product.name}
+        </h4>
+        <p className="mt-2 text-white truncate w-40 sm:w-56 text-center">
+          {product.description}
+        </p>
+      </div>
+    </RevealAnimation>
+  );
+};
 
 const SectionProducts: React.FC = () => {
   const handleOpenAgenda = () => {
@@ -16,46 +65,33 @@ const SectionProducts: React.FC = () => {
   };
 
   return (
-    <Container>
+    <div className="bg-foreground flex flex-col pb-12">
       <Title text="PRODUTOS" />
-      <div className="content">
-        <Products>
-          <Column>
-            <RevealAnimation>
-              <Product>
-                <img src={PomadaImage} alt="pomada" />
-                <h4>Chief Pomade</h4>
-                <p>À base de água</p>
-              </Product>
-            </RevealAnimation>
-            <RevealAnimation>
-              <Product>
-                <img src={PomadaImage} alt="pomada" />
-                <h4>Chief Pomade</h4>
-                <p>À base de água</p>
-              </Product>
-            </RevealAnimation>
-          </Column>
-          <Column>
-            <RevealAnimation>
-              <Product>
-                <img src={PomadaImage} alt="pomada" />
-                <h4>Chief Pomade</h4>
-                <p>À base de água</p>
-              </Product>
-            </RevealAnimation>
-            <RevealAnimation>
-              <Product>
-                <img src={PomadaImage} alt="pomada" />
-                <h4>Chief Pomade</h4>
-                <p>À base de água</p>
-              </Product>
-            </RevealAnimation>
-          </Column>
-        </Products>
-        <Button text="ENCOMENDAR" onClick={handleOpenAgenda} />
+      <div className="flex flex-col items-center w-full">
+        <div className="flex flex-wrap w-full items-center justify-center sm:gap-4 gap-2">
+          {products.map((p, idx) => (
+            <Product
+              key={idx}
+              src={p.src}
+              description={p.description}
+              name={p.name}
+            />
+          ))}
+        </div>
+        <RevealAnimation width="fit-content">
+          <button
+            onClick={handleOpenAgenda}
+            className="bg-primary border-2 p-4 px-12 mt-12 
+              flex items-center justify-center
+              gap-2 outline-none border-none"
+          >
+            <p className="text-white text-xl font-bold uppercase tracking-wider font-inter">
+              encomendar
+            </p>
+          </button>
+        </RevealAnimation>
       </div>
-    </Container>
+    </div>
   );
 };
 

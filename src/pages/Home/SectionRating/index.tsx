@@ -111,6 +111,7 @@ const SectionRating: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* <InfiniteWheel /> */}
     </div>
   );
 };
