@@ -101,7 +101,7 @@ const SectionHome: React.FC = () => {
         </div>
       </section>
       <section
-        className={`bg-[url('background.png')] bg-repeat-x bg-cover bg-left
+        className={`bg-[url('/background.png')] bg-repeat-x bg-cover bg-left
        w-full hidden sm:block`}
       ></section>
     </div>
