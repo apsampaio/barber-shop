@@ -24,19 +24,19 @@ const SectionLocation: React.FC = () => {
         <RevealAnimation width="100%">
           <div className="flex w-full items-center justify-center pb-8">
             <img
-              src={"/barber-shop/icons/instagram.svg"}
+              src={`${import.meta.env.BASE_URL}icons/instagram.svg`}
               alt="corte-icon"
               className="w-7 h-7 mx-4 hover:cursor-pointer"
               onClick={handleOpenInstagram}
             />
             <img
-              src={"/barber-shop/icons/whatsapp.svg"}
+              src={`${import.meta.env.BASE_URL}icons/whatsapp.svg`}
               alt="corte-icon"
               className="w-7 h-7 mx-4 hover:cursor-pointer"
               onClick={handleOpenWhatsapp}
             />
             <img
-              src={"/barber-shop/icons/facebook.svg"}
+              src={`${import.meta.env.BASE_URL}icons/facebook.svg`}
               alt="corte-icon"
               className="w-7 h-7 mx-4 hover:cursor-pointer"
               onClick={handleOpenFacebook}
@@ -46,7 +46,7 @@ const SectionLocation: React.FC = () => {
         <div className="flex w-full flex-col gap-4 pl-2 pb-8">
           {/* <div className="flex w-full items-center border-l-2 border-primary h-8">
             <img
-              src={"/barber-shop/icons/mail.svg"}
+              src={`${import.meta.env.BASE_URL}icons/mail.svg"}
               alt="corte-icon"
               className="w-5 h-5 mx-2 hover:cursor-pointer"
             />
@@ -56,7 +56,7 @@ const SectionLocation: React.FC = () => {
           </div> */}
           <div className="flex w-full border-l-2 items-center border-primary h-8">
             <img
-              src={"/barber-shop/icons/location.svg"}
+              src={`${import.meta.env.BASE_URL}icons/location.svg`}
               alt="corte-icon"
               className="w-5 h-7 mx-2 hover:cursor-pointer"
             />
@@ -67,7 +67,7 @@ const SectionLocation: React.FC = () => {
           </div>
           <div className="flex w-full items-center border-l-2 border-primary h-8">
             <img
-              src={"/barber-shop/icons/phone.svg"}
+              src={`${import.meta.env.BASE_URL}icons/phone.svg`}
               alt="corte-icon"
               className="w-5 h-5 mx-2 hover:cursor-pointer"
             />
@@ -77,7 +77,7 @@ const SectionLocation: React.FC = () => {
           </div>
           <div className="flex w-full items-center border-l-2 border-primary h-12">
             <img
-              src={"/barber-shop/icons/clock.svg"}
+              src={`${import.meta.env.BASE_URL}icons/clock.svg`}
               alt="horario-icon"
               className="w-5 h-5 mx-2 hover:cursor-pointer"
             />

@@ -12,21 +12,21 @@ const SectionPortfolio: React.FC = () => {
           <div className="flex-1 flex flex-col justify-between mt-20 md:flex-row md:items-end">
             <RevealFromLeft>
               <img
-                src="/barber-shop/portfolio/foto-1.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-1.jpg`}
                 alt="pic1"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />
             </RevealFromLeft>
             <RevealFromLeft>
               <img
-                src="/barber-shop/portfolio/foto-2.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-2.jpg`}
                 alt="pic2"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />
             </RevealFromLeft>
             <RevealFromLeft>
               <img
-                src="/barber-shop/portfolio/foto-3.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-3.jpg`}
                 alt="pic3"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />
@@ -35,21 +35,21 @@ const SectionPortfolio: React.FC = () => {
           <div className="flex-1 flex flex-col justify-between gap-2 mb-16 md:flex-row">
             <RevealFromRight>
               <img
-                src="/barber-shop/portfolio/foto-4.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-4.jpg`}
                 alt="pic4"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />
             </RevealFromRight>
             <RevealFromRight>
               <img
-                src="/barber-shop/portfolio/foto-6.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-6.jpg`}
                 alt="pic5"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />
             </RevealFromRight>
             <RevealFromRight>
               <img
-                src="/barber-shop/portfolio/foto-5.jpg"
+                src={`${import.meta.env.BASE_URL}portfolio/foto-5.jpg`}
                 alt="pic6"
                 className="w-full shadow-md xl:w-quarter sm:w-half"
               />

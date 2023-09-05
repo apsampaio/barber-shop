@@ -27,7 +27,7 @@ const SectionHome: React.FC = () => {
         w-screen h-screen overflow-hidden z-10 sm:w-half"
         >
           <video
-            src="/barber-shop/background_boy.mp4"
+            src={`${import.meta.env.BASE_URL}background_boy.mp4`}
             className="w-screen h-screen blur-sm brightness-50 object-fill"
             playsInline
             autoPlay
@@ -44,7 +44,7 @@ const SectionHome: React.FC = () => {
           {/* Logo */}
           <div className="flex w-full items-center justify-center relative mt-12">
             <img
-              src="/barber-shop/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="logo"
               className="sm:h-80 h-52 absolute z-20 rounded-full"
             />
@@ -101,8 +101,8 @@ const SectionHome: React.FC = () => {
         </div>
       </section>
       <section
-        className="bg-[url('/barber-shop/background.png')] bg-repeat-x bg-cover bg-left
-       w-full hidden sm:block"
+        className={`bg-[url('background.png')] bg-repeat-x bg-cover bg-left
+       w-full hidden sm:block`}
       ></section>
     </div>
   );

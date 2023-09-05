@@ -9,32 +9,32 @@ type iProduct = {
 
 const products: iProduct[] = [
   {
-    src: "/barber-shop/products/product-1.jpeg",
+    src: "products/product-1.jpeg",
     name: "GEL FIXADOR",
     description: "Extra forte sem deixar resíduos",
   },
   {
-    src: "/barber-shop/products/product-2.jpeg",
+    src: "products/product-2.jpeg",
     name: "POMADA CAPILAR",
     description: "Efeito seco sem resíduos",
   },
   {
-    src: "/barber-shop/products/product-3.jpeg",
+    src: "products/product-3.jpeg",
     name: "ÓLEO PARA BARBA",
     description: "Hidrata e amacia",
   },
   {
-    src: "/barber-shop/products/product-4.jpeg",
+    src: "products/product-4.jpeg",
     name: "POMADA EM PÓ",
     description: "Controla e modela",
   },
   {
-    src: "/barber-shop/products/product-5.jpeg",
+    src: "products/product-5.jpeg",
     name: "GEL FIXADOR (BLACK)",
     description: "Extra forte sem deixar resíduos",
   },
   {
-    src: "/barber-shop/products/product-6.jpeg",
+    src: "products/product-6.jpeg",
     name: "POMADA CAPILAR",
     description: "Efeito seco sem resíduos",
   },
@@ -72,7 +72,7 @@ const SectionProducts: React.FC = () => {
           {products.map((p, idx) => (
             <Product
               key={idx}
-              src={p.src}
+              src={import.meta.env.BASE_URL + p.src}
               description={p.description}
               name={p.name}
             />

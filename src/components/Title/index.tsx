@@ -14,7 +14,7 @@ const Title: React.FC<Props> = ({ text }) => {
         <span className="relative flex justify-center w-full">
           <span className="relative w-12 h-0.5 sm:w-24 rounded-3xl bg-white/90 -left-3 top-3 sm:top-6"></span>
           <img
-            src={"/barber-shop/icons/mustache.svg"}
+            src={`${import.meta.env.BASE_URL}icons/mustache.svg`}
             alt="corte-icon"
             className="w-7 mx-2 sm:w-12"
           />
