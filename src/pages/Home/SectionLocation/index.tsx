@@ -95,7 +95,10 @@ const SectionLocation: React.FC = () => {
           <iframe
             className="border-none w-full h-64"
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=Av.%20Dr.%20Thomas%20Cort%C3%AAz,%2091%20-%20Jardim%20Juliana,%20Sorocaba%20-%20SP,%2018080-300&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3207551625337!2d-47.465302023819355!3d-23.484953558791176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5f5f5dd7abbd9%3A0xaca548d4a3e43719!2sBoy%20Barber%20Shop!5e0!3m2!1spt-BR!2sbr!4v1694030207867!5m2!1spt-BR!2sbr"
+            allowFullScreen={false}
+            referrerPolicy="no-referrer-when-downgrade"
+            loading="lazy"
           ></iframe>
         </div>
       </div>
