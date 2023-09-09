@@ -8,7 +8,7 @@ const Title: React.FC<Props> = ({ text }) => {
   return (
     <RevealAnimation width="100%">
       <div className="flex w-full items-center flex-col justify-center py-12">
-        <h1 className="font-inter font-bold tracking-widest subpixel-antialiased text-white uppercase sm:text-xl">
+        <h1 className="font-poppins font-semibold tracking-widest antialiased text-white uppercase sm:text-xl">
           {text}
         </h1>
         <span className="relative flex justify-center w-full">

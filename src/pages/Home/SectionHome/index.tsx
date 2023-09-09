@@ -79,7 +79,7 @@ const SectionHome: React.FC = () => {
                 ease: "easeInOut",
                 type: "keyframes",
               }}
-              className="text-primary opacity-80 font-title uppercase font-bold
+              className="text-primary opacity-80 font-oswald uppercase font-bold
               text-center text-xl sm:text-2xl tracking-wider"
             >
               Mantenha o visual sempre em dia
@@ -92,7 +92,7 @@ const SectionHome: React.FC = () => {
               flex w-full items-center justify-center
               gap-2 outline-none border-none"
               >
-                <p className="text-white text-xl font-bold uppercase tracking-wider font-inter">
+                <p className="text-white text-xl font-bold uppercase tracking-wider font-poppins antialiased">
                   agendar
                 </p>
               </button>

@@ -9,18 +9,20 @@ type Props = {
 const ServiceCard: React.FC<Props> = ({ title, price }) => {
   return (
     <RevealFromLeft width="100%">
-      <div className="w-full py-4 flex border border-secondary bg-foreground sm:max-w-md sm:min-w-fit">
-        {/* <img
-          src={"/barber-shop/icons/" + icon}
-          alt="corte-icon"
-          className="w-5 h-5 mx-4"
-        /> */}
-        <p className="w-2 h-2 rounded-full bg-primary mx-4 my-2"></p>
-        <p className="text-base text-white font-inter whitespace-break-spaces">
+      <h1 className="relative h-4 inline-block w-full xl:w-72 xl:h-8 text-sm text-justify border-b-2 border-dotted border-white">
+        <span
+          className="uppercase text-white font-oswald font-medium text-md xl:text-xl tracking-widest 
+          inline-block absolute left-0 -bottom-1 bg-background text-left pr-1 leading-5"
+        >
           {title}
-        </p>
-        <strong className="ml-auto mr-4 text-white font-inter">{price}</strong>
-      </div>
+        </span>
+        <span
+          className="uppercase text-primary font-oswald font-normal text-base xl:text-lg tracking-wide antialiased
+          inline-block absolute right-0 -bottom-1 bg-background text-left pl-1 leading-5"
+        >
+          {price}
+        </span>
+      </h1>
     </RevealFromLeft>
   );
 };

@@ -45,10 +45,10 @@ const Product: React.FC<iProduct> = (product: iProduct) => {
     <RevealAnimation>
       <div className="flex flex-col items-center max-w-sm p-2 sm:p-4 rounded-sm border-primary border">
         <img src={product.src} alt="pomada" className="w-40 sm:w-56" />
-        <h4 className="text-white font-inter font-bold pt-4 truncate w-40 sm:w-56 text-center">
+        <h4 className="text-white font-oswald tracking-widest font-medium pt-4 truncate w-40 sm:w-56 text-center">
           {product.name}
         </h4>
-        <p className="mt-2 text-white truncate w-40 sm:w-56 text-center">
+        <p className="mt-2 text-white truncate w-40 sm:w-56 text-center font-poppins antialiased">
           {product.description}
         </p>
       </div>
@@ -85,7 +85,7 @@ const SectionProducts: React.FC = () => {
               flex items-center justify-center
               gap-2 outline-none border-none"
           >
-            <p className="text-white text-xl font-bold uppercase tracking-wider font-inter">
+            <p className="text-white text-xl font-bold uppercase tracking-wider font-poppins antialiased">
               encomendar
             </p>
           </button>

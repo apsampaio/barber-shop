@@ -4,9 +4,9 @@ export default {
   theme: {
     fontFamily: {
       title: ["Karantina", "cursive"],
-      inter: ["Inter", "sans-serif"],
-      roboto: ["Roboto", "sans-serif"],
       kaushan: ["Kaushan Script", "cursive"],
+      oswald: ["Oswald", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
     extend: {
       width: {

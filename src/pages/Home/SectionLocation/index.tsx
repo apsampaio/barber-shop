@@ -43,36 +43,16 @@ const SectionLocation: React.FC = () => {
             />
           </div>
         </RevealAnimation>
-        <div className="flex w-full flex-col gap-4 pl-2 pb-8">
-          {/* <div className="flex w-full items-center border-l-2 border-primary h-8">
-            <img
-              src={`${import.meta.env.BASE_URL}icons/mail.svg"}
-              alt="corte-icon"
-              className="w-5 h-5 mx-2 hover:cursor-pointer"
-            />
-            <p className="w-full text-white font-inter text-sm antialiased">
-              boybaybershop@gmail.com
-            </p>
-          </div> */}
+        <div className="flex w-full flex-col gap-6 xl:gap-6 pl-2 pb-8">
           <div className="flex w-full border-l-2 items-center border-primary h-8">
             <img
               src={`${import.meta.env.BASE_URL}icons/location.svg`}
               alt="corte-icon"
               className="w-5 h-7 mx-2 hover:cursor-pointer"
             />
-            <p className="w-full text-white font-inter text-sm antialiased">
+            <p className="w-full text-white font-poppins text-base antialiased">
               Av. Dr. Thomas Cortêz, 91 - Jardim Juliana, Sorocaba - SP,
               18080-300
-            </p>
-          </div>
-          <div className="flex w-full items-center border-l-2 border-primary h-8">
-            <img
-              src={`${import.meta.env.BASE_URL}icons/phone.svg`}
-              alt="corte-icon"
-              className="w-5 h-5 mx-2 hover:cursor-pointer"
-            />
-            <p className="w-full text-white font-inter text-sm antialiased">
-              +55 15 98820-9226
             </p>
           </div>
           <div className="flex w-full items-center border-l-2 border-primary h-12">
@@ -82,13 +62,27 @@ const SectionLocation: React.FC = () => {
               className="w-5 h-5 mx-2 hover:cursor-pointer"
             />
             <div className="flex flex-col justify-evenly h-full">
-              <p className="w-full text-white font-inter text-sm antialiased">
+              <p className="w-full text-white font-poppins text-base antialiased">
                 Ter. à Sex. 10:00h às 21:00h
               </p>
-              <p className="w-full text-white font-inter text-sm antialiased">
+              <p className="w-full text-white font-poppins text-base antialiased">
                 Sab. 09:00h às 19:00h
               </p>
             </div>
+          </div>
+          <div className="flex w-full items-center border-l-2 border-primary h-8">
+            <img
+              src={`${import.meta.env.BASE_URL}icons/phone.svg`}
+              alt="telefone-icon"
+              className="w-5 h-5 mx-2 hover:cursor-pointer"
+            />
+
+            <p className="w-full text-primary font-oswald text-3xl font-medium antialiased">
+              <strong className="text-white font-medium font-oswald">
+                15{" "}
+              </strong>
+              98820-9226
+            </p>
           </div>
         </div>
         <div className="flex items-center justify-center">
