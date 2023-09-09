@@ -42,7 +42,7 @@ const SectionServices: React.FC = () => {
           ))}
         </div>
         <div className="flex flex-col items-center w-full gap-5 sm:min-w-fit">
-          <p className="font-kaushan font-bold uppercase text-white text-xl tracking-widest antialiased">
+          <p className="font-kaushan font-bold uppercase text-white text-xl tracking-widest antialiased pt-6 sm:pt-0">
             Estética
           </p>
           {services_esthetics.map((s) => (
@@ -55,7 +55,7 @@ const SectionServices: React.FC = () => {
           ))}
         </div>
         <div className="flex flex-col items-center w-full gap-5 sm:min-w-fit">
-          <p className="font-kaushan font-bold uppercase text-white text-xl tracking-widest antialiased">
+          <p className="font-kaushan font-bold uppercase text-white text-xl tracking-widest antialiased pt-6 sm:pt-0">
             Combo
           </p>
           {services_combo.map((s) => (
