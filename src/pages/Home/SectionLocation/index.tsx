@@ -22,7 +22,7 @@ const SectionLocation: React.FC = () => {
       <Title text="CONTATO" />
       <div className="flex flex-col w-full -mt-4">
         <RevealAnimation width="100%">
-          <div className="flex w-full items-center justify-center pb-8">
+          <div className="flex w-full items-center justify-center pb-10">
             <img
               src={`${import.meta.env.BASE_URL}icons/instagram.svg`}
               alt="corte-icon"
@@ -50,7 +50,7 @@ const SectionLocation: React.FC = () => {
               alt="corte-icon"
               className="w-5 h-7 mx-2 hover:cursor-pointer"
             />
-            <p className="w-full text-white font-poppins text-base antialiased">
+            <p className="w-full text-white font-poppins text-sm antialiased">
               Av. Dr. Thomas Cortêz, 91 - Jardim Juliana, Sorocaba - SP,
               18080-300
             </p>
@@ -62,10 +62,10 @@ const SectionLocation: React.FC = () => {
               className="w-5 h-5 mx-2 hover:cursor-pointer"
             />
             <div className="flex flex-col justify-evenly h-full">
-              <p className="w-full text-white font-poppins text-base antialiased">
+              <p className="w-full text-white font-poppins text-sm antialiased">
                 Ter. à Sex. 10:00h às 21:00h
               </p>
-              <p className="w-full text-white font-poppins text-base antialiased">
+              <p className="w-full text-white font-poppins text-sm antialiased">
                 Sab. 09:00h às 19:00h
               </p>
             </div>

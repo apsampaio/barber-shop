@@ -65,7 +65,7 @@ const SectionProducts: React.FC = () => {
   };
 
   return (
-    <div className="bg-foreground flex flex-col pb-12">
+    <div className="bg-background flex flex-col pb-12">
       <Title text="PRODUTOS" />
       <div className="flex flex-col items-center w-full">
         <div className="flex flex-wrap w-full items-center justify-center sm:gap-4 gap-2">
